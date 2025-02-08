@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(68, 39, 15);
+    font-family: "Bebas Neue", cursive;
+}
+
+h2 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Lato", serif;
+    font-size: 1rem;
+}
+
+.hero {
+    background-image: url(../imagenes/hero-pattern.jpg);
+    min-height: 100vh;
+}
+
+.hero__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    height: 20vh;
+}
+
+
+.lado__izquierda,
+.lado__derecha {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.delivery{
+    display: flex;
+    align-items: center;
+}
+
+.icono__burguer {
+    background-image: url(../imagenes/logo.png);
+}
+
+.icono__delivery {
+    background-image: url(../imagenes/delivery.webp);
+}
+
+.lado__derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+ul {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.hero__main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.hero__img>img {
+    transform: translateX(15%);
+}
+
+.hero__main h4 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    word-spacing: 5px;
+    border: 2px dashed rgb(68, 39, 15);
+    text-align: center;
+    padding: 0.3rem;
+    width: max-content;
+}
+
+.hero__main h1 {
+    font-family: "Alfa Slab One", serif;
+    text-shadow: 5px 5px 0 white;
+    font-size: 7rem;
+}
+
+.hero__main span {
+    font-size: 4rem;
+}
+
+.hero__img {
+    position: relative;
+}
+
+.sale,
+.border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sale {
+    position: absolute;
+    z-index: 5;
+    bottom: 1.5rem;
+    left: 16rem;
+    border-radius: 50%;
+    background-color: red;
+    width: 13rem;
+    height: 13rem;
+}
+
+.border p,
+.border small {
+    color: white;
+}
+
+.border small {
+    font-size: 2rem;
+}
+
+.border {
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    border: 2px dashed white;
+}
+
+.border p:first-child {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.border p:nth-child(2) {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+}
+
+#combos,
+.enjoy__main,
+#events {
+    margin: 5rem auto;
+    width: 90%;
+    text-align: center;
+}
+
+#combos button {
+    background-color: #f8d24b;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+#combos button:hover {
+    background-color: #bb950d;
+}
+
+.combos__main {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+
+.combos__main div>* {
+    color: white;
+}
+
+.combos__main div>h3 {
+    font-size: 1.7rem;
+}
+
+.col__izquierda,
+.col__derecha {
+    width: 50%;
+    height: 50vh;
+    border-radius: 10px;
+    gap: 1.5rem;
+}
+
+.combos__main .col__izquierda {
+    background: url(../imagenes/gird-big.avif) center/cover no-repeat;
+    padding: 1rem;
+}
+
+.col__derecha,
+#formulario form>.col__izquierda {
+    display: flex;
+    flex-direction: column;
+}
+
+.col__derecha .arriba,
+.col__derecha .abajo {
+    height: 50%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.col__derecha .arriba {
+    background: url(../imagenes/grid-small1.jpeg) center/cover no-repeat;
+}
+
+.col__derecha .abajo {
+    background: url(../imagenes/grid-samll2.jpg) center/cover no-repeat;
+}
+
+.cards,
+#events {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards__main {
+    width: 35rem;
+    height: 40rem;
+}
+
+.enjoy__card img {
+    height: 28rem;
+}
+
+.enjoy__card img:first-child {
+    transform: translateX(-7%);
+    /*solo lo hago para centrar mas la imagen, pues no la descargue en la medida correcta*/
+}
+
+figcaption h3 {
+    font-size: 2rem;
+}
+
+figcaption p,
+figcaption button {
+    margin: 1rem 1rem;
+}
+
+figcaption .boton__cards,
+#formulario button {
+    padding: 0.5rem 1.5rem;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+}
+
+figcaption .boton__cards:hover,
+#formulario button:hover {
+    background-color: rgb(211, 77, 15);
+}
+
+#events {
+    border: 2px solid whitesmoke;
+    box-shadow: 6px 6px 20px rgb(128, 125, 125);
+}
+
+#events .col__derecha,
+#events .col__izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#events .col__izquierda {
+    align-items: flex-start;
+    text-align: left;
+    padding: 3rem;
+}
+
+.punto {
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    list-style: none;
+}
+
+.punto>li {
+    width: 1rem;
+    height: 1rem;
+    color: transparent;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.punto>li:first-child {
+    background-color: #bb950d;
+}
+
+.contenedor__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 6rem;
+    background-repeat: no-repeat;
+    background-image: url(../imagenes/bg1.webp),
+                    url(../imagenes/img_right.webp),
+                    url(../imagenes/enjoy1.png);
+    background-size: 200px,
+                     400px,
+                     300px;
+    background-position: 20% center,
+                         108% bottom,
+                         left -10%;
+                         
+}
+
+.reservation__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "valor1 valor4"
+        "valor2 valor5"
+        "valor3 button";
+    width: 35rem;
+    gap: 1rem;
+}
+
+.reservation__form input,
+.reservation__form button {
+    padding: 0.75rem 1rem;
+}
+
+.reservation__form .valor1 {
+    grid-area: valor1;
+}
+
+.reservation__form .valor2 {
+    grid-area: valor2;
+}
+
+.reservation__form .valor3 {
+    grid-area: valor3;
+}
+
+.reservation__form .valor4 {
+    grid-area: valor4;
+}
+
+.reservation__form .valor5 {
+    grid-area: valor5;
+}
+
+.reservation__form .button {
+    grid-area: button;
+    cursor: pointer;
+}
+
+/* form input{
+    padding: 0.5rem 1.5rem;
+} */
+
+/* .contenedor__formulario > div:nth-child(-n+3){
+    width:300px;
+    height: 400px;
+    position: absolute;
+} */
+
+/* .contenedor__formulario .imagen__left__top{
+    background: url(../imagenes/enjoy3.png)center/cover no-repeat;
+    top: 0; left: 0;
+    transform: translate(-10%, -30%);
+}
+.contenedor__formulario .imagen__left__bottom{
+    background: url(../imagenes/bg1.webp)center/cover no-repeat;
+    bottom: 20%; left: 6%;
+}
+.contenedor__formulario .imagen__right__bottom{
+ background: url(../imagenes/imagen_right-bottom.png) center/cover;
+ right:0; bottom: 30%;
+} */
+
+
+
+/* usando los seudoelementos podrias agregar las imagenes sin modificar el html ademas que no representa elementos reales en el DOM, es netamente para decoara.  
+ #formulario::before,
+#formulario::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+} 
+
+ #formulario::after, #formualrio::before{
+    background-image: url(../imagenes/bg1.webp);
+    top: 0;left: 0;
+    width: 200px;
+    height: 300px;
+} */
+ footer{
+    padding: 6rem;
+    padding-top: 0;
+ }
+.footer {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../imagenes/footer.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem;
+    width: 100%;
+}
+
+footer p,
+footer h2 {
+    color: white;
+}
+footer i{
+    color: white;
+    margin-right: 1rem;
+}
+.footer__top{
+    display: flex;
+    padding-block: 3rem;
+}
+
+.footer__top > div{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.footer__top > div:nth-child(2){
+    align-items: flex-end;
+}
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.logo__footer {
+    background-image: url(../imagenes/logo-footer.png);
+}
+
+footer ul>li {
+    margin-top: 10%;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.linkedin {
+    background-image: url(../imagenes/iconos/linkedin.png);
+}
+
+.facebook {
+    background-image: url(../imagenes/iconos/facebook-color.png);
+}
+
+.instagram {
+    background-image: url(../imagenes/iconos/instagram-color.png);
+}
+
+.youtube {
+    background-image: url(../imagenes/iconos/youtube_color.png);
+}
